@@ -59,7 +59,6 @@ header h1{
     font-weight: 800;
     line-height: 120%;
     color: rgb(230, 83, 60);
-    font-style: italic;
 }
 header ul{
     list-style: none;
@@ -79,7 +78,7 @@ header .img-container{
     position: relative;
 
 }
-header span{
+nav span{
     background-color:  rgb(230, 83, 60);
     padding: 8px 20px;
     border-radius: 39px;
@@ -98,6 +97,9 @@ header span{
     color: white;
     margin: 10px 0 20px 0;
     padding: 0;
+}
+.style{
+    
 }
 .text p{
     margin: 50px 0;
@@ -193,4 +195,37 @@ header span{
     height: 100%;
     border-radius: 50%;
     border: 1px white solid;
+}
+/* Extra miles section */
+.extra-mile{
+    max-width: 1300px;
+    margin: auto;
+    background-color: rgb(34, 34, 34);
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px 30px;
+}
+.extra-mile h2{
+    font-size: 3rem;
+    font-weight: 900;
+    line-height: 120%;
+    color: white;
+}
+.extra-mile p{
+    margin-bottom: 30px;
+}
+.extra-mile .text-container{
+    max-width: 550px;
+    margin: 0;
+}
+.extra-mile .img-container{
+    width: 430px;
+    height: 402px;
+}
+.extra-mile img{
+    width: 100%;
+    height: 100%;
+    border-radius: 19px;
 }
