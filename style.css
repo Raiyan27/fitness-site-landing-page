@@ -1,9 +1,196 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
 .inter-font {
-    font-family: "Inter", sans-serif;
-    font-optical-sizing: auto;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0;
+}
+
+/* Reusable styles */
+body{
+    background-color: black;
+}
+.display-flex{
+    display: flex;
+}
+.para{
+    font-size: 1rem;
     font-weight: 400;
-    font-style: normal;
-    font-variation-settings: "slnt" 0;
-  }
+    line-height: 24px;
+    color: rgba(255, 255, 255, 0.5);
+}
+.btn-primary{
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    line-height: 22px;
+    background-color: rgb(230, 83, 60);
+    border-radius: 42px;
+    border: none;
+    padding: 16px 40px;
+}
+.btn-secondary{
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    line-height: 22px;
+    background-color: black;
+    border-radius: 42px;
+    border: 1.5px rgb(255, 255, 255) solid;
+    padding: 16px 40px;
+}
+/* Header */
+header{
+    background-color: linear-gradient(180deg,
+    rgb(17, 17, 17) 0%),
+    rgba(119, 119, 119, 0) 100%;
+}
+nav{
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1300px;
+    margin: auto;
+}
+header h1{
+    font-size: 2.25rem;
+    font-weight: 800;
+    line-height: 120%;
+    color: rgb(230, 83, 60);
+    font-style: italic;
+}
+header ul{
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 39px;
+    padding: 12px 30px 12px 5px;
+}
+header li{
+    color: rgb(255, 255, 255);
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 120%;
+}
+header .img-container{
+    position: relative;
+
+}
+header span{
+    background-color:  rgb(230, 83, 60);
+    padding: 8px 20px;
+    border-radius: 39px;
+}
+
+
+/* banner */
+.banner{
+    justify-content: space-evenly;
+    max-width: 1300px;
+    margin: auto;
+}
+.text h1{
+    font-weight: 900;
+    font-size: 5rem;
+    color: white;
+    margin: 10px 0 20px 0;
+    padding: 0;
+}
+.text p{
+    margin: 50px 0;
+}
+.img-container button{
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    border: 1px rgba(48, 48, 48, 0.54) solid;
+    position: absolute;
+}
+.badge{
+    height: 100px;
+    width: 200px;
+}
+.banner .text{
+    max-width: 520px;
+}
+.badge h2{
+    color: white;
+}
+.badge h2{
+    font-weight: 900;
+    font-size: 2.5rem;
+    margin: 0;
+}
+.badge p{
+    margin: 0;
+}
+.top{
+    top: 150px;
+    left: 230px;
+}
+.bottom{
+    top: 430px;
+    left: -80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.red-circle{
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    background-color: rgb(230, 83, 60);
+    margin-right: 10px;
+    border: none;
+}
+/* habits section css*/
+.habits{
+    max-width: 1300px;
+    margin: auto;
+}
+.habits h2{
+    color: rgb(255, 255, 255);
+    font-weight: 900;
+    font-size: 3rem;
+    text-align: center;
+}
+.habits h3{
+    color: rgb(255, 255, 255);
+    font-weight: 900;
+    font-size: 1.25rem;
+    text-align: center;
+}
+
+.habits p{
+    text-align: center;
+    max-width: 600px;
+    margin: auto;
+    margin-bottom: 50px;
+}
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: auto;
+}
+.card{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 230px;
+}
+.card .img-container{
+    width: 180px;
+    height: 180px;
+
+}
+.card .img-container img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 1px white solid;
+}
