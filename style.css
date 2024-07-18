@@ -13,6 +13,9 @@
 }
 
 /* Reusable styles */
+.style{
+    font-family:;
+}
 body{
     background-color: black;
 }
@@ -50,6 +53,7 @@ body{
 }
 /* Header */
 header{
+    margin-top: 50px;
     background-color: linear-gradient(180deg,
     rgb(17, 17, 17) 0%),
     rgba(119, 119, 119, 0) 100%;
@@ -96,6 +100,7 @@ nav span{
     justify-content: space-evenly;
     max-width: 1300px;
     margin: auto;
+    margin-bottom: 100px;
 }
 .text h1{
     font-weight: 900;
@@ -155,45 +160,50 @@ nav span{
 /* habits section css*/
 .habits{
     max-width: 1300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     margin: auto;
+    margin-bottom: 100px;
 }
 .habits h2{
     color: rgb(255, 255, 255);
     font-weight: 900;
     font-size: 3rem;
     text-align: center;
+    margin: 20px;
 }
 .habits h3{
     color: rgb(255, 255, 255);
     font-weight: 900;
     font-size: 1.25rem;
     text-align: center;
+    margin-top: 10px;
 }
-
 .habits p{
     text-align: center;
     max-width: 600px;
-    margin: auto;
-    margin-bottom: 50px;
+    margin: 10px 0px;
 }
-.card-container{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    margin: auto;
+.habits .card-container{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    gap: 20px
 }
-.habit .card{
+.habits .card{
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
     max-width: 230px;
 }
-.card .img-container{
+.habits .card .img-container{
     width: 180px;
     height: 180px;
-
 }
-.card .img-container img{
+.habits .card .img-container img{
     width: 100%;
     height: 100%;
     border-radius: 50%;
@@ -209,6 +219,7 @@ nav span{
     align-items: center;
     justify-content: space-around;
     padding: 50px 30px;
+    margin-bottom: 100px;
 }
 .extra-mile h2{
     font-size: 3rem;
@@ -238,12 +249,19 @@ nav span{
     font-weight: 900;
     line-height: 120%;
     color: rgb(255, 255, 255);
-    text-align: center;
+    max-width: 1350px;
+    margin: auto;
+    margin-bottom: 100px;
+}
+.trainings h1{
+    padding: 50px 0 30px 0;
+}
+.trainings p{
+    padding: 20px 0 30px 0;
 }
 .trainings .img-container{
     max-width: 1350px;
     margin: auto;
-    border: 1px red solid;
     position: relative;
 }
 .trainings .img-container .row-1{
@@ -267,8 +285,22 @@ nav span{
     top: 39%;
 }
 .img-4-p{
-    left: 42%;
+    left: 32%;
     top: 52%;
+}
+.img-5-p{
+    left: 57%;
+    top: 82%;
+}
+.img-6-p{
+    left: 82%;
+    top: 82%;
+}
+.img-3{
+    filter: brightness(0.5)
+}
+.img-4{
+    filter: brightness(0.45)
 }
 .trainings .img-container .row-1 img{
     width: 100%;
@@ -288,9 +320,11 @@ nav span{
 }
 /* BMI calculator */
 .bmi-calculator{
+    background-color: rgb(34, 34, 34);
     display: flex;
     justify-content: space-around;
     padding: 50px 150px;
+    margin-bottom: 100px;
 }
 .bmi-calculator h1{
     font-weight: 900;
@@ -298,10 +332,7 @@ nav span{
     color: rgb(255, 255, 255);
     margin: 0 0 50px 0;
 }
-.bmi-calculator{
-    background-color: rgb(34, 34, 34);
-    margin: 30px 0px;
-}
+
 .bmi-calculator .text{
     margin: 0;
     padding: 0;
@@ -356,7 +387,7 @@ option {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    margin-bottom: 100px;
 }
 .team h1{
     font-size: 3rem;
@@ -417,14 +448,14 @@ footer .text h1{
 }
 footer .container{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     margin: 0 250px;
     border-bottom: 2px rgba(255, 255, 255, 0.1) solid;
     padding: 30px 0px;
 }
 footer .text {
-    max-width: 500px;
+    max-width: 400px;
 }
 footer .container h2{
     color: white;
