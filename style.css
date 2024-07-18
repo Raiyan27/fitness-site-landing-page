@@ -232,6 +232,60 @@ nav span{
     height: 100%;
     border-radius: 19px;
 }
+/* Training and exercises section */
+.trainings{
+    font-size: 3rem;
+    font-weight: 900;
+    line-height: 120%;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+.trainings .img-container{
+    max-width: 1350px;
+    margin: auto;
+    border: 1px red solid;
+    position: relative;
+}
+.trainings .img-container .row-1{
+    display: grid;
+    grid-template-columns: 0.7fr 1.6fr 0.7fr;
+}
+.trainings .img-container .row-1 p{
+    position: absolute;
+    color: white;
+}
+.img-1-p{
+    left: 2%;
+    top: 42%;
+}
+.img-2-p{
+    left: 30%;
+    top: 12%;
+}
+.img-3-p{
+    left: 78%;
+    top: 39%;
+}
+.img-4-p{
+    left: 42%;
+    top: 52%;
+}
+.trainings .img-container .row-1 img{
+    width: 100%;
+    height: 100%;
+}
+.trainings .img-container .row-2{
+    display: grid;
+    grid-template-columns: 1.6fr 0.7fr 0.7fr;
+}
+.trainings .img-container .row-2 p{
+    position: absolute;
+    color: white;
+}
+.trainings .img-container .row-2 img{
+    width: 100%;
+    height: 100%;
+}
 /* BMI calculator */
 .bmi-calculator{
     display: flex;
@@ -385,6 +439,7 @@ footer .container li{
     color: rgba(255, 255, 255, 0.5);
     font-size: 1.75rem;
     font-weight: 400;
+    margin: 30px;
 }
 .footer-p{
     text-align: center;
