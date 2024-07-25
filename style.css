@@ -1,20 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 *{
     margin: 0;
     padding: 0;
 }
 .inter-font {
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: normal;
-  font-style: normal;
-  font-variation-settings:
-    "slnt" 0;
-}
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "slnt" 0;
+  }
 
 /* Reusable styles */
 .style{
-    font-family:;
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;                   
 }
 body{
     background-color: black;
@@ -54,9 +57,10 @@ body{
 /* Header */
 header{
     margin-top: 50px;
-    background-color: linear-gradient(180deg,
-    rgb(17, 17, 17) 0%),
-    rgba(119, 119, 119, 0) 100%;
+    /* background-color: linear-gradient(180deg, rgb(17, 17, 17) 0%),
+    rgba(119, 119, 119, 0) 100%; */
+    /* background: linear-gradient(180deg, rgb(17, 17, 17), #333333); */
+    background: linear-gradient(180deg, rgb(17, 17, 17) 0%, rgba(119, 119, 119, 0) 100%);
 }
 nav{
     justify-content: space-between;
@@ -435,6 +439,97 @@ option {
     left: 10%;
 } 
 
+/* review section css */
+.review{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 100px;
+    max-width: 1300px;
+}
+.review h1{
+    font-size: 3rem;
+    font-weight: 800;
+    color: white;
+}
+.review .right-container{
+    position: relative;
+    padding: 30px 0;
+    max-width:  800px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 30px;
+}
+.review .people-img{
+    filter: grayscale(1);
+    width: 50%;
+}
+.review .star-container{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    right: 0%;
+    top: 0%
+}
+.review .star{
+    width: 100%;
+    height: 100%;
+}
+.review .next-btn{
+    border-radius: 50%;
+    border: none;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: -5%;
+    top: 50%;
+}
+.review .next-btn img{
+    width: 100%;
+    height: 100%;
+}
+.review .customer-desc{
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+}
+.review .customer-name{
+    font-size: 2rem;
+    font-weight: 800;
+    color: white;
+}
+.review .customer-title{
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.7);
+}
+.review .customer-img-container{
+    width: 60px;
+    height: 60px;
+    margin: 10px 20px 0px 0px;
+}
+.review .customer-img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 2px rgba(255, 255, 255, 0.5) solid;
+}
+.review .dot-container{
+    margin: 0;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    position: absolute;
+    top: 75%;
+    right: 45%;
+}
+.review .dot-img{
+    width: 100%;
+    height: 100%;
+}
 
 /* Footer section */
 footer{
