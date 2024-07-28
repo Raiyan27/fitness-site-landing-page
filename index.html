@@ -14,10 +14,10 @@
          <nav>
                 <h1><i>Fitness</i></h1>
             <ul>
-                <li><span>Home</span></li>
-                <li>Service</li>
-                <li>Contact</li>
-                <li>About</li>
+                <li><span><a href="">Home</a></span></li>
+                <li><a href="#bmi">Service</a></li>
+                <li><a href="#footer">Contact</a></li>
+                <li><a href="#team">About</a></li>
             </ul>
             <div class="burger-container">
                 <img src="./images/hamburger.png" alt="" class="burger">
@@ -26,9 +26,12 @@
          <section class="banner display-flex">
             <div class="text">
                 <h1>Get body in <span class="style">shape</span> & stay healthy</h1>
-                <p class="para">A huge selection of health and fitness content, healthy recipes and transformation stories to help you get fit and stay fit!</p>
-                <button class="btn-primary">Join Club Now!</button>
-                <button class="btn-secondary">Download App</button>
+                <p class="para">Our state-of-the-art facilities and expert trainers are dedicated to helping you get your body in shape and stay healthy. Whether you're a beginner or an experienced athlete, we offer a wide range of classes and equipment to suit your needs.</p>
+                <div class="btn-container">
+                    <button class="btn-primary">Join Club Now!</button>
+                    <button class="btn-primary-small">Join Now!</button>
+                    <button class="btn-secondary">Download App</button>
+                </div>
             </div>
             <div class="img-container">
                 <img src="./images/images2.png" alt="">
@@ -52,28 +55,29 @@
                     <img src="./images/image3.png" alt="">
                 </div>
                 <h3>Movement</h3>
-                <p class="para">We believe fitness should be accessible to everyone</p>
+                <p class="para">
+                    Movement is crucial to stay active to live a healthier, more energetic life.</p>
             </div>
             <div class="card">
                 <div class="img-container">
                     <img src="./images/image2.png" alt="">
                 </div>
                 <h3>Time</h3>
-                <p class="para">We believe fitness should be accessible to everyone</p>
+                <p class="para">Time management ensures consistent workouts and fitness progress.</p>
             </div>
             <div class="card">
                 <div class="img-container">
                     <img src="./images/image4.png" alt="">
                 </div>
                 <h3>Practice</h3>
-                <p class="para">We believe fitness should be accessible to everyone</p>
+                <p class="para">Practice builds consistency, improves technique, and leads to long-term fitness gains.</p>
             </div>
             <div class="card">
                 <div class="img-container">
                     <img src="./images/image5.png" alt="">
                 </div>
                 <h3>Weight Loss</h3>
-                <p class="para">We believe fitness should be accessible to everyone</p>
+                <p class="para">Weight loss enhances health, mobility, and overall fitness.</p>
             </div>
         </div>
     </section>
@@ -91,7 +95,7 @@
     </section>
     <section class="trainings">
         <h1>Training and Exercises</h1>
-        <p class="para">We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym.</p>
+        <p class="para">Training and exercises are vital for fitness; they build strength, improve endurance, enhance flexibility, and boost overall health. Regular workouts lead to a balanced, healthy, and energetic lifestyle.</p>
         <div class="img-container">
             <div class="row-1">
                 <img src="./images/exercise1.jpg" alt="" class="img-1">
@@ -111,7 +115,7 @@
             </div>
         </div>
     </section> 
-    <section class="bmi-calculator">
+    <section class="bmi-calculator" id="bmi">
         <div class="table">
             <h1>BMI Calculator Chart</h1>
             <table>
@@ -135,32 +139,33 @@
         </div>
         <div class="text">
             <h1>Calculate Your BMI</h1>
-            <p class="para">We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym. </p>
-            <form action="">
-                <input type="text" placeholder="Height/cm">
-                <input type="text" placeholder="Weight/kg">
-                <input type="text" placeholder="Age">
-                <select name="" id="">
-                    <option value="">Sex</option>
-                    <option value="">Male</option>
-                    <option value="">Female</option>
-                    <option value="">Others</option>
-                </select>    
-                
-            </form>
-            <div class="odd-one">
-                <select class="odd-one" name="" id="">
-                    <option value="">Select an activity factor</option>
-                    <option value="">Running</option>
-                    <option value="">Cycling</option>
-                    <option value="">Swimming</option>
-                    <option value="">Sleeping</option>
-                </select>
+            <p class="para">BMI is a useful indicator of body fat and overall health. Maintaining a healthy BMI helps prevent obesity-related diseases and guides fitness goals for a balanced lifestyle.</p>
+            <div class="input-container">
+                <form action="">
+                    <input type="text" placeholder=" Height/cm">
+                    <input type="text" placeholder=" Weight/kg">
+                    <input type="text" placeholder=" Age">
+                    <select name="" id="">
+                        <option value="">Sex</option>
+                        <option value="">Male</option>
+                        <option value="">Female</option>
+                        <option value="">Others</option>
+                    </select>    
+                </form>
+                <div class="odd-one">
+                    <select class="odd-one" name="" id="">
+                        <option value="">Select an activity factor</option>
+                        <option value="">Running</option>
+                        <option value="">Cycling</option>
+                        <option value="">Swimming</option>
+                        <option value="">Sleeping</option>
+                    </select>
+                </div>
             </div>
             <button class="btn-primary wide">Calculate</button>
         </div>
     </section>
-    <section class="team">
+    <section class="team" id="team">
         <h1>Meet Our Team</h1>
         <p class="para">Discover the Faces Behind Our Success. Their dedication and hard work lead us here. Under there guidance you too will be able to build your dream physique</p>
         <div class="card-container">
@@ -208,7 +213,7 @@
             <div class="star-container">
                 <img src="./images/rating.png" alt="" class="star">
             </div>
-            <p class="para">Joining "Fitness" was the best choice I've made. They are very unprofessional and give you suggestions about what food to eat, which have transformed my approach to health and wellness. Despite their informal methods, the advice has been surprisingly effective, helping me to make healthier food choices that align with my fitness goals.</p>
+            <p class="para">Joining "Fitness" was the best choice I've made. They are very unprofessional and give you suggestions about what food to eat, which have transformed my approach to health and wellness.</p>
             <button class="next-btn"><img src="./images/next.png" alt=""></button>
             <div class="customer-desc">
                 <div class="customer-img-container">
@@ -225,7 +230,7 @@
         </div>
     </section>
     <footer>
-        <div class="container">
+        <div class="container" id="footer">
             <div class="text">
                 <h1>Fitness</h1>
                 <p class="para">We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym. With hundreds of professional workouts.</p>
