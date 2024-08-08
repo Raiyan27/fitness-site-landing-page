@@ -585,7 +585,7 @@ footer .container li{
     color: rgba(255, 255, 255, 0.5);
     font-size: 1.5rem;
     font-weight: 400;
-    margin: 30px;
+    margin: 25px 0px;
 }
 .footer-p{
     text-align: center;
@@ -613,7 +613,7 @@ footer li{
     footer, .review, .bmi-calculator{
         padding: 50px;
     }
-    .btn-primary{
+    .hide{
         display: none;
     }
     header .btn-container{
@@ -651,6 +651,10 @@ footer li{
         width: 100%;
         height: 100%;
     }
+    header .btn-container{
+        justify-content: center;
+    }
+    
     .top{
         top: 35%;
         left: 40%;
@@ -658,6 +662,9 @@ footer li{
     .bottom{
         top: 80%;
         left: 5%;
+    }
+    .habits{
+        margin: 100px 4px;
     }
     .habits .card-container{
         display: grid;
@@ -694,6 +701,7 @@ footer li{
         flex-direction: column;
         text-align: center;
         padding: 0px 10px;
+        padding-bottom: 40px;
     }
     .bmi-calculator .table{
         margin: 50px auto;
@@ -727,6 +735,10 @@ footer li{
     }
     .review .customer-desc{
         justify-content: center;
+    }
+    .review .dot-container{
+        top: 80%;
+        right: 35%;
     }
     footer .container{
         flex-direction: column;
